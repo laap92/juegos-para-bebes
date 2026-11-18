@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://laap92.github.io/juegos-para-bebes/sitemap.xml

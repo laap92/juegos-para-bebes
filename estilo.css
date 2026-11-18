@@ -1,0 +1,36 @@
+
+:root{--fondo:#FBF4EA;--fondo2:#F5E6D3;--texto:#3D405B;--acento:#E07A5F;--salvia:#81B29A;--oro:#F2CC8F;--blanco:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--texto);font:18px/1.6 "Nunito","Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+a{color:var(--acento)}
+.envoltura{max-width:760px;margin:0 auto;padding:0 16px}
+header{padding:18px 0}
+header .envoltura{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.marca{font-weight:900;font-size:20px;text-decoration:none;color:var(--texto)}
+nav a{margin-left:14px;font-weight:700;text-decoration:none}
+h1{font-size:clamp(30px,6vw,44px);line-height:1.15;margin:12px 0}
+h2{font-size:26px;line-height:1.25;margin:36px 0 8px}
+h1 em,h2 em{font-style:normal;color:var(--acento)}
+.hero{display:grid;gap:24px;align-items:center;padding:16px 0 8px}
+@media(min-width:720px){.hero{grid-template-columns:1.3fr 1fr}}
+.hero img{width:100%;max-width:300px;border-radius:24px;box-shadow:0 12px 30px rgba(61,64,91,.15);justify-self:center}
+.boton{display:inline-block;background:var(--acento);color:var(--blanco);font-weight:900;font-size:20px;padding:14px 28px;border-radius:40px;text-decoration:none;box-shadow:0 8px 20px rgba(224,122,95,.35)}
+.boton:hover{filter:brightness(1.05)}
+.nota{font-size:15px;opacity:.8}
+.etapas{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:20px 0}
+.etapa{background:var(--blanco);border-radius:20px;padding:18px;text-decoration:none;color:var(--texto);box-shadow:0 6px 18px rgba(61,64,91,.08)}
+.etapa b{display:block;font-size:20px;color:var(--acento)}
+.juego{background:var(--blanco);border-radius:24px;padding:20px 22px;margin:18px 0;box-shadow:0 6px 18px rgba(61,64,91,.08)}
+.juego h2{margin-top:0}
+.juego dl{margin:0}
+.juego dt{font-weight:900;margin-top:10px}
+.juego dd{margin:0}
+.seg{background:#FFF4E5;border-left:5px solid var(--oro);padding:8px 12px;border-radius:8px;margin-top:10px}
+.fuente{font-size:14px;opacity:.75;margin-top:10px}
+.cta{background:var(--salvia);color:var(--blanco);border-radius:28px;padding:26px;margin:36px 0;text-align:center}
+.cta h2{margin-top:0;color:var(--blanco)}
+.cta .boton{background:var(--blanco);color:var(--texto)}
+details{background:var(--blanco);border-radius:16px;padding:14px 18px;margin:10px 0}
+summary{font-weight:800;cursor:pointer}
+.migas{font-size:14px;margin-top:8px}
+footer{margin-top:48px;padding:28px 0;background:var(--fondo2);font-size:15px}
